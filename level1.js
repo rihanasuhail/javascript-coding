@@ -1,3 +1,6 @@
+// 1. Reverse a String
+// Given a string, return it reversed.
+// Concepts: strings, loops, arrays
 function reverseString(str) {
   let revString = "";
   for (let i = str.length - 1; i >= 0; i--) {
@@ -6,6 +9,9 @@ function reverseString(str) {
   return revString;
 }
 
+// Check Palindrome
+// Return true if a string is a palindrome.
+// Concepts: string manipulation, conditionals
 function checkPalindrome(str) {
   let revString = "";
   for (let i = str.length - 1; i >= 0; i--) {
@@ -18,6 +24,9 @@ function checkPalindrome(str) {
   }
 }
 
+// Find the Largest Number in an Array
+// Return the maximum value in an array.
+// Concepts: loops, Math, comparison
 function largestNumberInArray(arr) {
   let largest = arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -28,6 +37,9 @@ function largestNumberInArray(arr) {
   return largest;
 }
 
+// Count Vowels in a String
+// Count how many vowels exist in a string.
+// Concepts: strings, objects, conditionals
 function countVowels(str) {
   const vowelArray = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
   let count = 0;
@@ -80,6 +92,9 @@ function fizzBuzz(num) {
   }
 }
 
+// Find the Factorial of a Number
+// Return factorial of n.
+// Concepts: loops, recursion
 function factorial(n) {
   if (n < 0) {
     throw new Error("Factorial is not defined for negative numbers");
