@@ -25,6 +25,17 @@ function largestNumberInArray(arr){
     return largest
 }
 
+function countVowels(str){
+    const vowelArray = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    let count = 0
+    for (let i=0; i <str.length; i++ ) {
+        if (vowelArray.includes(str[i]) ) {
+            count = count + 1
+        }
+    }
+    return count
+}
+
 console.log(reverseString("hello"))
 console.log(reverseString("Rihana"))
 console.log(reverseString("a"))
@@ -52,4 +63,19 @@ console.log(largestNumberInArray([1, 5, 5, 3]))
 console.log(largestNumberInArray([0, -1, 10, 3]))
 console.log(largestNumberInArray([Number.MIN_SAFE_INTEGER, 0]))
 console.log(largestNumberInArray([100, 200, 300]))
+
+console.log(countVowels("hello"))
+console.log(countVowels("aeiou"))
+console.log(countVowels("AEIOU"))
+console.log(countVowels("Rihana"))
+console.log(countVowels("bcdfg"))
+console.log(countVowels("aEiOu"))
+console.log(countVowels("hello world"))
+console.log(countVowels(""))
+console.log(countVowels("a"))
+console.log(countVowels("xyz"))
+console.log(countVowels("12345"))
+console.log(countVowels("a1e2i3o4u"))
+console.log(countVowels("!@#aeiou$%"))
+console.log(countVowels("😊ae😊"))
 
