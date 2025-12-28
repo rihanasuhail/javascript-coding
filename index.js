@@ -80,6 +80,18 @@ function fizzBuzz(num) {
   }
 }
 
+function factorial(n) {
+  if (n < 0) {
+    throw new Error("Factorial is not defined for negative numbers");
+  }
+
+  let fact = 1;
+  for (let i = n; i >= 1; i--) {
+    fact = fact * i;
+  }
+  return fact;
+}
+
 console.log(reverseString("hello"));
 console.log(reverseString("Rihana"));
 console.log(reverseString("a"));
@@ -135,3 +147,12 @@ fizzBuzz(16);
 fizzBuzz(30);
 fizzBuzz(0);
 fizzBuzz(-5);
+
+console.log(factorial(0));
+console.log(factorial(1));
+console.log(factorial(2));
+console.log(factorial(3));
+console.log(factorial(5));
+console.log(factorial(7));
+console.log(factorial(10));
+console.log(factorial(20));
