@@ -36,6 +36,27 @@ function countVowels(str){
     return count
 }
 
+// The spread operator takes the value out of something and adds it to the array 
+// so for example: [...{1,2,3}] becomes [1,2,3]
+// const a = [1,2,3]
+// const b = [4,5,6]
+// then const  c = [...a,...b] => [1,2,3,4,5,6]
+
+// const str = 'hello'
+// const arr = [...str]
+// then arr = ["h", "e", "l", "l", "o"]
+
+// Spreading objects
+// const user = {name: 'Rihana', age: 25}
+// const copy = {...user}
+// then { name: "Rihana", age: 24 }
+
+// Set removes duplicates from an array
+function removeDuplicatesFromArray(arr){
+    const newArr = [...new Set(arr)]
+    return newArr
+}
+
 console.log(reverseString("hello"))
 console.log(reverseString("Rihana"))
 console.log(reverseString("a"))
@@ -79,3 +100,7 @@ console.log(countVowels("a1e2i3o4u"))
 console.log(countVowels("!@#aeiou$%"))
 console.log(countVowels("😊ae😊"))
 
+console.log(removeDuplicatesFromArray([1, 2, 2, 3]))
+console.log(removeDuplicatesFromArray(["a", "b", "a"]))
+console.log(removeDuplicatesFromArray([1, "1", 1]))
+console.log(removeDuplicatesFromArray([]))
