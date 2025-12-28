@@ -92,6 +92,12 @@ function factorial(n) {
   return fact;
 }
 
+// Sum of All Numbers in an Array can be done using reduce
+// Reduces function reduces every element in an array and makes it to a single one
+function sumOfItemsInArray(arr) {
+  return arr.reduce((acc, item) => acc + item, 0); // where 0 is the initial value of acc field. Acc is the count and item is each element of the array
+}
+
 console.log(reverseString("hello"));
 console.log(reverseString("Rihana"));
 console.log(reverseString("a"));
@@ -156,3 +162,9 @@ console.log(factorial(5));
 console.log(factorial(7));
 console.log(factorial(10));
 console.log(factorial(20));
+
+console.log(sumOfItemsInArray([1, 2, 3]));
+console.log(sumOfItemsInArray([10, -5, 5]));
+console.log(sumOfItemsInArray([0, 0, 0]));
+console.log(sumOfItemsInArray([100]));
+console.log(sumOfItemsInArray([]));
