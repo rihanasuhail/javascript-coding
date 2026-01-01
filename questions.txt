@@ -1,11 +1,5 @@
 🟡 Level 2: Arrays, Objects & Strings
 
-11. Flatten a Nested Array
-[1, [2, [3, 4]], 5] → [1, 2, 3, 4, 5]
-
-
-Concepts: recursion
-
 12. Group Elements by Frequency
 
 Concepts: objects, maps
