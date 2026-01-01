@@ -12,6 +12,7 @@ function findSecondLargest(arr) {
   console.log(arrSorted[1]);
 }
 
+// Check if Two Strings are Anagrams
 function anagramCheck(str1, str2) {
   const sortedstr1 = str1.toLowerCase().split("").sort().join(""); // join() function joins the contents with the seperator as argument
   const sortedstr2 = str2.toLowerCase().split("").sort().join("");
