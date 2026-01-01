@@ -22,6 +22,18 @@ function anagramCheck(str1, str2) {
     console.log(false);
   }
 }
+
+function flattenArray(arr) {
+  let result = [];
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      result = result.concat(flattenArray(item)); //.concat() joins arrays together to form a new array.
+    } else {
+      result.push(item);
+    }
+  }
+  return result;
+}
 findSecondLargest([1, 2, 3, 4, 5]);
 findSecondLargest([5, 4, 3, 2, 1]);
 findSecondLargest([10, 20, 30]);
@@ -35,3 +47,13 @@ anagramCheck("race", "care");
 anagramCheck("hello", "world");
 anagramCheck("aab", "aba");
 anagramCheck("Listen", "Silent");
+
+console.log(flattenArray([1, [2, [3, 4]], 5]));
+console.log(
+  flattenArray([
+    [1, 2],
+    [3, 4],
+  ]),
+);
+console.log(flattenArray([1, [2], 3]));
+console.log(flattenArray([1, 2, 3]));
