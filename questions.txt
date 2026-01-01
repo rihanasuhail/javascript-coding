@@ -1,0 +1,102 @@
+🟡 Level 2: Arrays, Objects & Strings
+
+11. Flatten a Nested Array
+[1, [2, [3, 4]], 5] → [1, 2, 3, 4, 5]
+
+
+Concepts: recursion
+
+12. Group Elements by Frequency
+
+Concepts: objects, maps
+
+13. Find Intersection of Two Arrays
+
+Concepts: sets, filtering
+
+14. Capitalize the First Letter of Each Word
+
+Concepts: strings, split/join
+
+15. Count Occurrences of Each Character
+
+Concepts: objects, loops
+
+🟠 Level 3: Functions & Closures
+16. Create a Counter Function
+const counter = createCounter();
+counter(); // 1
+counter(); // 2
+
+
+Concepts: closures
+
+17. Implement once() Function
+
+Function can be called only once.
+
+Concepts: closures, state
+
+18. Memoization Function
+
+Cache function results.
+
+Concepts: closures, objects
+
+19. Implement expect(val).toBe(val)
+
+Concepts: closures, error handling
+
+20. Debounce Function
+
+Delay execution until inactivity.
+
+Concepts: closures, timers
+
+🔵 Level 4: Async JavaScript
+21. Delay Function using Promise
+await delay(1000);
+
+
+Concepts: Promises, async/await
+
+22. Fetch Data from an API
+
+Concepts: fetch, async/await
+
+23. Retry Promise on Failure
+
+Concepts: promises, loops
+
+24. Execute Promises Sequentially
+
+Concepts: async flow control
+
+25. Implement Promise.all
+
+Concepts: promises, arrays
+
+🔴 Level 5: Advanced JS & Internals
+26. Deep Clone an Object
+
+Concepts: recursion, objects
+
+27. Flatten an Object
+{ a: { b: 1 } } → { "a.b": 1 }
+
+
+Concepts: recursion
+
+28. Implement bind()
+
+Concepts: this, prototypes
+
+29. Implement map() from Scratch
+
+Concepts: prototypes, loops
+
+30. Event Emitter
+
+Implement .on() and .emit()
+
+Concepts: objects, arrays, callbacks
