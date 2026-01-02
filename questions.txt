@@ -1,9 +1,5 @@
 🟡 Level 2: Arrays, Objects & Strings
 
-14. Capitalize the First Letter of Each Word
-
-Concepts: strings, split/join
-
 15. Count Occurrences of Each Character
 
 Concepts: objects, loops

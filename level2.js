@@ -65,6 +65,31 @@ function findIntersection(arr1, arr2) {
   console.log(result);
 }
 
+// Capitalize each word in a string
+// .slice() : It takes out a part of an array or string and returns a new one (old one remains untouched)
+// .slice(startIndex, endIndex): startIndex is included, endIndex is not
+// const arr = [10, 20, 30, 40, 50];
+// arr.slice(1, 4);
+// The result would be [20,30,40]
+// If you want to remove the first letter string.slice(1), so everything from the second letter is included
+// To copy an array: const copy = arr.slice();
+
+// .split(): breaks a string into an array of smaller pieces
+// syntax: string.split(separator)
+function capitalizeWord(str) {
+  const splitString = str.split(" ");
+  const newResultString = [];
+  for (let i = 0; i < splitString.length; i++) {
+    if (splitString[i] === "") {
+      newResultString.push("");
+    } else {
+      const split = splitString[i][0].toUpperCase() + splitString[i].slice(1);
+      newResultString.push(split);
+    }
+  }
+  console.log(newResultString.join(" "));
+}
+
 findSecondLargest([1, 2, 3, 4, 5]);
 findSecondLargest([5, 4, 3, 2, 1]);
 findSecondLargest([10, 20, 30]);
@@ -101,3 +126,8 @@ findIntersection([1, 2], [1, 2]);
 findIntersection([3, 2, 1], [1, 2, 3]);
 findIntersection([1, 1, 1], [1, 1]);
 findIntersection([], [1, 2]);
+
+capitalizeWord("hello there");
+capitalizeWord("javaScript is fun");
+capitalizeWord("hello-world test");
+capitalizeWord(" hello world ");
