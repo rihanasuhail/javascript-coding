@@ -1,9 +1,3 @@
-🟡 Level 2: Arrays, Objects & Strings
-
-15. Count Occurrences of Each Character
-
-Concepts: objects, loops
-
 🟠 Level 3: Functions & Closures
 16. Create a Counter Function
 const counter = createCounter();
