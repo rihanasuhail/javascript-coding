@@ -48,6 +48,23 @@ function groupByFrequency(arr) {
   return freqGrouped;
 }
 
+// Find the common elements between 2 arrays
+// The logic we used is that first we turned the array to a set to avoid duplication
+// then we used filter to filter out the data and stored it in data array
+function findIntersection(arr1, arr2) {
+  const set1 = new Set(arr1);
+  // .has() is used to check if a particular element is present in a set
+  // .filter() filters the element into a new array only if it passes a condition
+  const result = [
+    ...new Set(
+      arr2.filter((num) => {
+        return set1.has(num);
+      }),
+    ),
+  ];
+  console.log(result);
+}
+
 findSecondLargest([1, 2, 3, 4, 5]);
 findSecondLargest([5, 4, 3, 2, 1]);
 findSecondLargest([10, 20, 30]);
@@ -76,3 +93,11 @@ console.log(groupByFrequency([1, 1, 2, 2, 2, 3]));
 console.log(groupByFrequency(["a", "b", "a"]));
 console.log(groupByFrequency([]));
 console.log(groupByFrequency([true, true, false]));
+
+findIntersection([1, 2, 3], [2, 3, 4]);
+findIntersection([1, 2, 2, 3], [2, 3, 3]);
+findIntersection([5, 6], [7, 8]);
+findIntersection([1, 2], [1, 2]);
+findIntersection([3, 2, 1], [1, 2, 3]);
+findIntersection([1, 1, 1], [1, 1]);
+findIntersection([], [1, 2]);
