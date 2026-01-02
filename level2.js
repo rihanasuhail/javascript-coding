@@ -34,6 +34,20 @@ function flattenArray(arr) {
   }
   return result;
 }
+
+// Group Elements by Frequency
+function groupByFrequency(arr) {
+  let freqGrouped = {};
+  for (let item of arr) {
+    if (freqGrouped[item]) {
+      freqGrouped[item]++;
+    } else {
+      freqGrouped[item] = 1;
+    }
+  }
+  return freqGrouped;
+}
+
 findSecondLargest([1, 2, 3, 4, 5]);
 findSecondLargest([5, 4, 3, 2, 1]);
 findSecondLargest([10, 20, 30]);
@@ -57,3 +71,8 @@ console.log(
 );
 console.log(flattenArray([1, [2], 3]));
 console.log(flattenArray([1, 2, 3]));
+
+console.log(groupByFrequency([1, 1, 2, 2, 2, 3]));
+console.log(groupByFrequency(["a", "b", "a"]));
+console.log(groupByFrequency([]));
+console.log(groupByFrequency([true, true, false]));
