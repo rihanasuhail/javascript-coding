@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "level1": "node level1.js",
     "level2": "node level2.js",
+    "level3": "node level3.js",
     "prettier": "npx prettier --write ."
   },
   "dependencies": {
