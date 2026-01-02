@@ -90,6 +90,21 @@ function capitalizeWord(str) {
   console.log(newResultString.join(" "));
 }
 
+// Count occurances of each character
+function countOccuranceOfCharacter(str) {
+  const splitStr = str.toLowerCase().split("");
+  const result = {};
+
+  for (let item of splitStr) {
+    if (result[item]) {
+      result[item]++;
+    } else {
+      result[item] = 1;
+    }
+  }
+  console.log(result);
+}
+
 findSecondLargest([1, 2, 3, 4, 5]);
 findSecondLargest([5, 4, 3, 2, 1]);
 findSecondLargest([10, 20, 30]);
@@ -131,3 +146,8 @@ capitalizeWord("hello there");
 capitalizeWord("javaScript is fun");
 capitalizeWord("hello-world test");
 capitalizeWord(" hello world ");
+
+countOccuranceOfCharacter("hello");
+countOccuranceOfCharacter("javascrip");
+countOccuranceOfCharacter("aabbcc");
+countOccuranceOfCharacter("Aa");
