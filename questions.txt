@@ -1,9 +1,5 @@
 🟡 Level 2: Arrays, Objects & Strings
 
-12. Group Elements by Frequency
-
-Concepts: objects, maps
-
 13. Find Intersection of Two Arrays
 
 Concepts: sets, filtering

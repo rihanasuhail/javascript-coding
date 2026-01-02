@@ -1,4 +1,5 @@
-This repository is a practise repo for Javascript coding questions
+This repository is a practise repo for Javascript coding questions that I practice everyday.
+
 There are various levels to this
 Level1
 Level2
