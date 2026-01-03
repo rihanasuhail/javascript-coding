@@ -1,9 +1,5 @@
 🟠 Level 3: Functions & Closures
 
-19. Implement expect(val).toBe(val)
-
-Concepts: closures, error handling
-
 20. Debounce Function
 
 Delay execution until inactivity.
