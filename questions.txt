@@ -1,9 +1,4 @@
 🔵 Level 4: Async JavaScript
-21. Delay Function using Promise
-await delay(1000);
-
-
-Concepts: Promises, async/await
 
 22. Fetch Data from an API
 
