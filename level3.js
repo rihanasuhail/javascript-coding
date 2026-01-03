@@ -37,3 +37,25 @@ function calledOnce(fn) {
 const calling1 = calledOnce((a, b) => a + b);
 console.log(calling1(2, 3));
 console.log(calling1(4, 5)); // wont return anything as the previous value is remembered due to closure
+
+// Memoization Function
+// Cache function results.
+
+function cacheMemo(fn) {
+  const cache = {};
+  return function (...args) {
+    // stringify the args
+    const stringifyArgs = JSON.stringify(args);
+    if (cache[stringifyArgs]) {
+      return cache[stringifyArgs];
+    } else {
+      const result = fn(...args);
+      cache[stringifyArgs] = result;
+      return result;
+    }
+  };
+}
+
+const calling2 = cacheMemo((a, b) => a + b);
+console.log(calling2(2, 3));
+console.log(calling2(2, 3));
