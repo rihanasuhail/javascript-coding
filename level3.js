@@ -86,6 +86,7 @@ function debounce(fn, delay) {
     // clearTimeout(timerId) stops the scheduled execution of the function if it hasn’t run yet
     // so the previous timerId is deleted as closures remember
     clearTimeout(timerId);
+    // setTimeout creates a delay after which the function would be executed
     timerId = setTimeout(() => fn(...args), delay);
   };
 }
