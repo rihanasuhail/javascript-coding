@@ -1,11 +1,5 @@
 🟠 Level 3: Functions & Closures
 
-18. Memoization Function
-
-Cache function results.
-
-Concepts: closures, objects
-
 19. Implement expect(val).toBe(val)
 
 Concepts: closures, error handling
