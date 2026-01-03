@@ -1,11 +1,5 @@
 🟠 Level 3: Functions & Closures
 
-17. Implement once() Function
-
-Function can be called only once.
-
-Concepts: closures, state
-
 18. Memoization Function
 
 Cache function results.
