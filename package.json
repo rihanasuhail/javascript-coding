@@ -11,6 +11,7 @@
     "level1": "node level1.js",
     "level2": "node level2.js",
     "level3": "node level3.js",
+    "level4": "node level4.js",
     "prettier": "npx prettier --write ."
   },
   "dependencies": {
