@@ -1,11 +1,4 @@
 🟠 Level 3: Functions & Closures
-16. Create a Counter Function
-const counter = createCounter();
-counter(); // 1
-counter(); // 2
-
-
-Concepts: closures
 
 17. Implement once() Function
 
