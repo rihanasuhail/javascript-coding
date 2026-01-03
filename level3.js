@@ -76,3 +76,23 @@ function expect(val) {
 
 console.log(expect(5).toBe(5));
 console.log(expect(5).toBe(4));
+
+// Debounce function
+// In this function, the response is consolled only after inactivity
+
+function debounce(fn, delay) {
+  let timerId;
+  return function (...args) {
+    // clearTimeout(timerId) stops the scheduled execution of the function if it hasn’t run yet
+    // so the previous timerId is deleted as closures remember
+    clearTimeout(timerId);
+    timerId = setTimeout(() => fn(...args), delay);
+  };
+}
+
+const debounceCall = debounce((str) => console.log(str), 5000);
+debounceCall("He");
+debounceCall("Hell");
+debounceCall("Hello");
+debounceCall("Hello The");
+debounceCall("Hello There"); // Only hello there is printed

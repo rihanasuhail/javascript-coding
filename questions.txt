@@ -1,11 +1,3 @@
-🟠 Level 3: Functions & Closures
-
-20. Debounce Function
-
-Delay execution until inactivity.
-
-Concepts: closures, timers
-
 🔵 Level 4: Async JavaScript
 21. Delay Function using Promise
 await delay(1000);
