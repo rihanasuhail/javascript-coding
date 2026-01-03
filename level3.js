@@ -59,3 +59,20 @@ function cacheMemo(fn) {
 const calling2 = cacheMemo((a, b) => a + b);
 console.log(calling2(2, 3));
 console.log(calling2(2, 3));
+
+// Implement expect(val).toBe(num)
+function expect(val) {
+  return {
+    toBe: function (num) {
+      if (val === num) {
+        return true;
+      } else {
+        return false;
+        // throw new Error("Values or not equal")
+      }
+    },
+  };
+}
+
+console.log(expect(5).toBe(5));
+console.log(expect(5).toBe(4));
