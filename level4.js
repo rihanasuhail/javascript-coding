@@ -11,3 +11,13 @@ async function delay(ms) {
   });
 }
 delay(5000);
+
+// Fetch Data from an API
+// Async allows you to use await
+// fetch and response.json returns promises, so await must be used
+async function fetchData(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data);
+}
+fetchData("https://jsonplaceholder.typicode.com/users");
