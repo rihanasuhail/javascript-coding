@@ -1,9 +1,5 @@
 🔵 Level 4: Async JavaScript
 
-23. Retry Promise on Failure
-
-Concepts: promises, loops
-
 24. Execute Promises Sequentially
 
 Concepts: async flow control
