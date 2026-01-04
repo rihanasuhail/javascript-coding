@@ -1,9 +1,5 @@
 🔵 Level 4: Async JavaScript
 
-22. Fetch Data from an API
-
-Concepts: fetch, async/await
-
 23. Retry Promise on Failure
 
 Concepts: promises, loops
