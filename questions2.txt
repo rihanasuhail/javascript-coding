@@ -1,0 +1,109 @@
+🟢 Level 1: Logic & Fundamentals (Warm-up)
+
+Check if a Number is Prime
+
+Find Factorial of a Number
+
+Reverse Words in a Sentence
+
+Find the Longest Word in a String
+
+Check if Two Arrays are Equal
+
+Find the Minimum Value in an Array
+
+Count Digits in a Number
+
+Convert String to Title Case
+
+Remove Falsy Values from an Array
+
+Find the First Non-Repeating Character
+
+🟡 Level 2: Arrays & Objects (Very Common)
+
+Merge Two Sorted Arrays
+
+Find Duplicate Elements in an Array
+
+Group Anagrams Together
+
+Find Pair with Given Sum
+
+Sort an Array of Objects by a Key
+
+Convert Array to Object (Key-Value Mapping)
+
+Find Most Frequent Element
+
+Chunk an Array into Smaller Arrays
+
+Rotate an Array by K Steps
+
+Find Intersection of Multiple Arrays
+
+🟠 Level 3: Functions, Closures & Scope
+
+Implement curry() Function
+
+Create a Private Variable using Closure
+
+Implement bind() Polyfill
+
+Implement call() and apply() Polyfill
+
+Create a Chainable Calculator
+
+Function Composition
+
+Implement once() with Reset
+
+Debounce with Immediate Execution
+
+Throttle with Leading & Trailing Options
+
+Create a Custom Event Listener
+
+🔵 Level 4: Async JavaScript & Promises
+
+Implement sleep() using Promise
+
+Convert Callback-based Function to Promise
+
+Implement Promise.race()
+
+Implement Promise.any()
+
+Limit Concurrent Promises
+
+Retry Fetch with Exponential Backoff
+
+Cancel a Promise using AbortController
+
+Sequential API Calls with Dependency
+
+Timeout a Promise
+
+Queue Promises with Priority
+
+🔴 Level 5: Advanced / System-Thinking
+
+Deep Merge Two Objects
+
+Detect Circular References in an Object
+
+Implement Observer Pattern
+
+Implement Singleton Pattern
+
+Implement a Simple Router
+
+Virtual DOM Diffing (Basic)
+
+Implement Infinite Scroll Logic
+
+Implement Autocomplete Search
+
+Build a Simple Cache with Expiry
+
+Rate Limiter with Sliding Window
