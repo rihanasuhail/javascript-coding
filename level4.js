@@ -33,3 +33,22 @@ async function retryPromise(fn, retries) {
     }
   }
 }
+
+// Execute Promises Sequentially
+// Concepts: async flow control
+// The setTimeout() method calls a function after a number of milliseconds.
+const tasks = [
+  () => new Promise((res) => setTimeout(() => res("Task1 completed"), 2000)),
+  () => new Promise((res) => setTimeout(() => res("Task2 completed"), 2000)),
+  () => new Promise((res) => setTimeout(() => res("Task3 completed"), 2000)),
+  () => new Promise((res) => setTimeout(() => res("Task4 completed"), 2000)),
+];
+// finish the promise successfully and then return the value within res()
+
+async function resolvePromises(tasks) {
+  for (let task of tasks) {
+    const result = await task();
+    console.log(result);
+  }
+}
+resolvePromises(tasks);
