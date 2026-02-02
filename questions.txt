@@ -1,9 +1,5 @@
 🔵 Level 4: Async JavaScript
 
-24. Execute Promises Sequentially
-
-Concepts: async flow control
-
 25. Implement Promise.all
 
 Concepts: promises, arrays
