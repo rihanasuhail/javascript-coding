@@ -1,9 +1,3 @@
-🔵 Level 4: Async JavaScript
-
-25. Implement Promise.all
-
-Concepts: promises, arrays
-
 🔴 Level 5: Advanced JS & Internals
 26. Deep Clone an Object
 

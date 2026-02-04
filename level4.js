@@ -52,3 +52,37 @@ async function resolvePromises(tasks) {
   }
 }
 resolvePromises(tasks);
+
+// 25. Implement Promise.all
+// Concepts: promises, arrays
+// Promise.all resolves when all promises resolve
+
+function myPromiseAll(promises) {
+  return new Promise((resolve, reject) => {
+    let result = [];
+    let completed = 0;
+
+    if (promises.length === 0) {
+      resolve([]);
+    }
+
+    promises.forEach((item, index) => {
+      Promise.resolve(item)
+        .then((value) => {
+          result[index] = value;
+          completed++;
+
+          if (completed === promises.length) {
+            resolve(result);
+          }
+        })
+        .catch(reject);
+    });
+  });
+}
+
+const p1 = new Promise((res) => setTimeout(() => res(1), 1000));
+const p2 = new Promise((res) => setTimeout(() => res(2), 500));
+const p3 = 3;
+
+myPromiseAll([p1, p2, p3]).then(console.log).catch(console.error);
